@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="11-form.php" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com">
+        
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" step="1">
+        
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        
+        <br>
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        
+        <br>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search here">
+        
+        <br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+        
+        <br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        
+        <br>
+
+        <label for="appointment">Appointment:</label>
+        <input type="datetime-local" id="appointment" name="appointment">
+        
+        <br>
+
+        <label for="alarm">Alarm:</label>
+        <input type="time" id="alarm" name="alarm">
+        
+        <br>
+
+        <label for="expiry">Expiry Date:</label>
+        <input type="month" id="expiry" name="expiry">
+        
+        <br>
+
+        <label for="week">Select Week:</label>
+        <input type="week" id="week" name="week">
+        
+        <br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        
+        <br>
+
+        <label for="subscribe">Subscribe:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        
+        <br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        
+        <br>
+
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="10">
+        
+        <br>
+
+        <input type="hidden" name="userId" value="12345">
+        
+        <br>
+
+        <input type="submit" value="Submit">
+        
+        <br>
+
+        <input type="reset" value="Reset">
+        
+        <br>
+
+        <button type="button" onclick="alert('Hello!')">Click Me</button>
+        
+        <br>
+
+        <button type="button" onclick="document.getElementById('username').value = 'John Doe'">Set Username</button>
+        
+        <br>
+
+        <input type="image" src="Images/Submit-Button.png" width="200px" alt="Submit">
+        
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here"></textarea>
+
+        <br>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+            <br>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+            <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com">
+        </fieldset>
+
+        <br>
+
+        <select id="multi-select" name="multi-select" multiple>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <br>
+
+        <select id="grouped-dropdown" name="grouped-dropdown">
+            <optgroup label="Group 1">
+              <option value="g1o1">Group 1 - Option 1</option>
+              <option value="g1o2">Group 1 - Option 2</option>
+            </optgroup>
+            <optgroup label="Group 2">
+              <option value="g2o1">Group 2 - Option 1</option>
+              <option value="g2o2">Group 2 - Option 2</option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <select id="dropdown" name="dropdown">
+            <option value="default" selected disabled>Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <br>
+
+        <label for="dropdown">Choose an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>          
+
+        <br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="toyota">Toyota</option>
+            <option value="mercedes" selected>Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <br>
+
+        <label for="cars">Type or choose a browser:</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Opera">
+            <option value="Edge">
+        </datalist>
+
+        <br>
+
+        <fieldset>
+            <legend>Which of the following are programming languages?</legend>
+            <label for="q1-python">
+              <input type="checkbox" id="q1-python" name="question1" value="Python"> Python
+            </label><br>
+            <label for="q1-html">
+              <input type="checkbox" id="q1-html" name="question1" value="HTML"> HTML
+            </label><br>
+            <label for="q1-java">
+              <input type="checkbox" id="q1-java" name="question1" value="Java"> Java
+            </label><br>
+            <label for="q1-css">
+              <input type="checkbox" id="q1-css" name="question1" value="CSS"> CSS
+            </label>
+          </fieldset>
+
+    </form>
+</body>
+</html>

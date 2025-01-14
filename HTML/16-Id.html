@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myBox {    /* ใช้เครื่องหมาย # เพื่ออ้างอิงถึง Id */
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!--
+        1. Id คือ Attribute หรือ คุณสมบัติของ HTML ที่เราสามารถใช้ระบุชื่อ Id ให้กับ HTML Tag ตัวนั้นๆได้
+        2. Id จะถูกใช้เพื่ออ้างอิงไปที่ไฟล์ CSS และ JavaScript
+        3. Id ต้องมีแค่ตัวเดียว
+        4. Id ห้ามนำมาใช้ซ้ำ ถ้าต้องการใช้ซ้ำให้ใช้ Class แทน
+    -->
+
+    <div id="myBox">
+
+    </div>
+
+    <script>
+        let myBox = document.getElementById('myBox');
+        myBox.addEventListener('click', function() {
+            alert('This is green box.');
+        });
+    </script>
+
+</body>
+</html>
