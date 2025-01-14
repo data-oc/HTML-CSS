@@ -1,0 +1,28 @@
+/*
+Selector ใน CSS มีอยู่ 3 ประเภท ได้แก่
+1. Element Selector
+2. ID Selector
+3. Class Selector
+*/
+
+/* 1. Element Selector */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* 2. ID Selector */
+#box1-id {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    margin: 10px;
+}
+
+/* 3. Class Selector */
+.box2-class {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    margin: 10px;
+}
