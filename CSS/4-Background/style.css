@@ -1,0 +1,23 @@
+body {
+
+    /* 1. Longhand property
+    background-color: [color];
+    background-image: url('[path]');  
+    background-repeat: [no-repeat, repeat-x, repeat-y, repeat];
+    background-attachment: [fixed, scroll];
+    background-position: [center, top, bottom, left, right];
+    -----------------------------------
+    background-size: [cover, contain];
+    */
+
+    /* 2. Shorthand property */
+    background: yellow url('Images/Venice-Italy.jpg') no-repeat fixed center; 
+    background-size: cover;
+}
+
+.myBox {
+    width: 500px;
+    height: 300px;
+    background-image: url('Images/Dolomite-Mountains-Italy.jpg');
+    background-size: cover;
+}

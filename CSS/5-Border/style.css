@@ -1,0 +1,76 @@
+/*
+1. Set all 4 sides 
+border-style: dotted; 
+border-width: [number][unit];
+border-radius: [number][unit];  // 10px, 10%, 10em, 10rem, 10vw, 10vh, 10vmin, 10vmax
+
+2. Set each side separately (Longhand)
+border-top-style: dotted;
+border-right-style: solid;
+border-bottom-style: dashed;
+border-left-style: double;
+border-radius: [number][unit];
+border-width: [number][unit];
+
+3. Set each side separately (Shorthand)
+border-style: dotted solid dashed double;  // Top, Right, Bottom, Left
+border-radius: [number][unit];
+border-width: [number][unit];
+*/
+
+.dotted {
+    border-style: dotted; 
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+.dashed {
+    border-style: dashed;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+.solid {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 20px 15px 10px 5px;  /* Top, Right, Bottom, Left */
+    border-color: red blue #bf00ff #f59f00;
+}  
+
+.double {
+    border-style: double;
+    border-radius: 10px;
+}
+
+.groove {
+    border-style: groove;
+}
+
+.ridge {
+    border-style: ridge;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
+
+.none {
+    border-style: none;
+}
+
+.hidden {
+    border-style: hidden;
+}
+
+.mixed {
+    border-style: dotted dashed solid double;  /* Top, Right, Bottom, Left */
+}
+
+.myCustom {
+    border-style: dotted solid dashed double;
+    border-width: 5px;
+}
