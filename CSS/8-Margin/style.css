@@ -1,0 +1,36 @@
+div {
+    width: 300px;
+    height: 150px;
+    background-color: #fbe0b5;
+    padding: 20px;
+    border: 10px solid #f44336;
+
+    margin: 50px 100px 20px 10px; 
+
+    /* Shorthand properties
+    margin: [all-sides]px;
+    margin: 50px;  
+    */
+
+    /* Shorthand properties 
+    margin: [top-bottom]px [left-right]px; 
+    margin: 50px 100px; 
+    */
+
+    /* Shorthand properties
+    margin: [top]px [left-right]px [bottom]px; 
+    margin: 50px 100px 20px; 
+    */
+
+    /* Shorthand properties
+    margin: [top]px [right]px [bottom]px [left]px;
+    margin: 50px 100px 20px 10px;  
+    */
+
+    /* Longhand properties
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-left: 100px; 
+    */
+}

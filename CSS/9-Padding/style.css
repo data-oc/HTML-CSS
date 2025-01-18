@@ -1,0 +1,26 @@
+div {
+    width: 300px;
+    height: 150px;
+    background-color: #fbe0b5;
+    
+    border: 10px solid #000;
+    margin: 10px;
+
+    /* padding: 20px; */
+
+    /* Shorthand properties 
+    padding: [top]px [right]px [bottom]px [left]px;
+    */
+    padding: 50px 100px 20px 10px; 
+
+    /* Longhand properties
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 15px; 
+    */
+
+    
+    
+    
+}
