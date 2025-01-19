@@ -1,0 +1,21 @@
+/* Parent Element */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+}
+
+
+/* Pseudo-Class จะมี colon ตัวเดียว */
+a:hover {
+    background-color: lightgreen;
+}
+
+
+/* Pseudo-Element จะมี colon สองตัว */
+p::first-line {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}

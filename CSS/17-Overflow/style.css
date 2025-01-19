@@ -1,0 +1,23 @@
+/* Parent Element */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+}
+
+/* Child Element */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    
+    /* 
+    overflow: [hidden | scroll | auto] 
+    hidden จะตัดคำที่เกินออกไป
+    scroll จะเพิ่มปุ่มเลื่อนเข้ามาให้เลย โดยไม่สนใจว่าคำจะเกินมาหรือไม่
+    auto จะเพิ่มปุ่มเลื่อนเข้ามาให้ ถ้ามีคำเกินจากกล่อง  
+    */
+
+    overflow: auto;
+}

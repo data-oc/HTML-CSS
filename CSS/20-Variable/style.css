@@ -1,0 +1,39 @@
+/* Variable คือ การสร้างตัวแปรเพื่อเก็บค่าใน CSS */
+
+/* Variable */
+:root {
+    --myBoxColor: blue;
+    --container-width: 700px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--myBoxColor);
+    margin: 10px;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--myBoxColor);
+    margin: 10px;
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--myBoxColor);
+    margin: 10px;
+}
