@@ -1,0 +1,31 @@
+p {
+    
+    /* Change block element to inline */
+    display: inline;
+    
+    outline: 1px solid red;
+
+}
+
+span {
+    
+    /* Change inline element to block */
+    display: block;
+    
+    outline: 1px solid blue;
+
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    
+    /* display: none หมายความว่าทำให้ element นี้หายไป */
+    /* display: none; */
+
+    /* visibility: hidden หมายความว่าทำให้ element นี้หายไป แต่ยังคงมีพื้นที่ในการแสดงผล */
+    visibility: hidden;
+}
+
+

@@ -1,0 +1,30 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+
+    /* 
+    collapse the border between the cells 
+    collapse = ทำให้เส้นของตารางจากสองเส้น เหลือเพียงเส้นเดียว
+    */
+    border-collapse: collapse;  
+}
+
+th {
+    height: 50px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td {
+    height: 40px;
+    text-align: center;
+    vertical-align: bottom; 
+}
+
+tr:hover {
+    background-color: #6ff04f;
+}
+

@@ -1,0 +1,77 @@
+/* 15-Position-1 ตัวอย่างนี้จะกำหนด position ให้กับ child element เท่านั้น */
+
+/* Parent Element */
+.container {
+
+    /* width: 960px; จะเป็นการกำหนดความกว้างแบบตายตัวไปเลย ซึ่งไม่เป็นผลดีต่อการทำ Responsive Web Design */
+    /* width: 960px; */
+
+    /* max-width: 960px; สามารถปรับขนาดหน้าจอได้สูงสุด 960px และจะมีการปรับขนาดหน้าจอให้เราโดยอัตโนมัติ เวลาที่เรามีการลดขนาดหน้าจอลง */
+    max-width: 700px;
+
+    /* margin: 0 auto; หมายความว่า กำหนดค่า บน-ล่าง เป็น 0 และ ซ้าย-ขวา เป็นค่า auto อีกทั้งยังทำให้กล่องอยู่ตรงกึ่งกลาง */
+    margin: 0 auto;
+
+    padding-bottom: 2000px;
+
+    background-color: yellow;
+}
+
+/* Child Element */
+.redBox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    /* position: static; หมายความว่า ไม่สามารถใช้ top, bottom, left, right เพื่อกำหนดตำแหน่ง และพื้นที่ว่าง บน, ล่าง, ซ้าย, ขวา ให้กับมันได้ */
+    position: static;
+    top: 500px;  /* ไม่มีผล */
+    left: 500px;  /* ไม่มีผล */
+}
+
+.blueBox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    /* position: relative; หมายความว่า มันจะอยู่ในตำแหน่งที่อ้างอิงกับ Parent Element และ Child Element ตัวอื่นๆ และสามารถใช้ top, bottom, left, right เพื่อกำหนดพื้นที่ว่าง บน, ล่าง, ซ้าย, ขวา ให้กับมันได้ */
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.orangeBox {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+
+    /* position: fixed; หมายความว่า สามารถใช้ top, left, right, bottom เพื่อกำหนดตำแหน่ง และพื้นที่ว่าง บน, ล่าง, ซ้าย, ขวา ให้กับมันได้ อีกทั้งเวลาเราทำการ scroll เมาส์ ขึ้น-ลง มันก็จะเลื่อนไปตามเมาส์ด้วย */
+    position: fixed;
+
+    /* 
+    top: 80px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านบน และดันกล่องลงมาด้านล่าง 80px 
+    left: 60px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านซ้าย และดันกล่องไปทางขวา 60px
+    right: 40px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านขวา และดันกล่องไปทางซ้าย 40px
+    bottom: 20px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านล่าง และดันกล่องขึ้นไปด้านบน 20px
+    */
+    top: 10px;
+    right: 10px;
+}
+
+.greenBox {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+    /* position: absolute; หมายความว่า สามารถใช้ top, left, right, bottom เพื่อกำหนดตำแหน่ง และพื้นที่ว่าง บน, ล่าง, ซ้าย, ขวา ให้กับมันได้ แต่เวลาเราทำการ scroll เมาส์ ขึ้น-ลง มันก็จะเลื่อนไปตามเมาส์ด้วย */
+    position: absolute;
+
+    /* 
+    top: 80px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านบน และดันกล่องลงมาด้านล่าง 80px 
+    left: 60px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านซ้าย และดันกล่องไปทางขวา 60px
+    right: 40px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านขวา และดันกล่องไปทางซ้าย 40px
+    bottom: 20px; หมายความว่า ให้กล่องอยู่ตำแหน่งด้านล่าง และดันกล่องขึ้นไปด้านบน 20px
+    */
+    bottom: 10px;
+    left: 10px;
+}

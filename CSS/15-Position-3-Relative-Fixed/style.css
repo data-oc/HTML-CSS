@@ -1,0 +1,48 @@
+/* 15-Position-2 ตัวอย่างนี้จะกำหนด position ให้ทั้ง parent element และ child element */
+
+/* Parent Element */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 2000px;
+    background-color: yellow;
+
+    position: relative;
+}
+
+/* Child Element */
+.redBox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.blueBox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.orangeBox {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.greenBox {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.myText1 {
+    font-family: "Montserrat", serif;
+    font-size: 30px;
+    font-style: italic;
+
+    /* Font weight
+        100 is the same as thin
+        200 is the same as extra-light
+        300 is the same as light
+        400 is the same as normal 
+        700 is the same as bold
+        900 is the same as bolder
+    */
+    font-weight: 400;  
+
+    /* Font color */
+    color: blueviolet;      
+}
+
+.myText2 {
+    
+    /* Shorthand property */
+    font: italic 400 30px "Montserrat", serif;
+    
+    color: red;
+}
